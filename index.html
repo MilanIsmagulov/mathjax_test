@@ -4,158 +4,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>MathJax example</title>
-  <script id="MathJax-script" async src="./mathJax.js"></script>
+  <script id="MathJax-script" async src="./mathJax.js">
+  </script>
+  <script src="./cdn.js"></script>
+  <link rel="stylesheet" href="style.css">
   <style>
+    body {
+        font-family: 'MathJax_AMS';
+    }
+
+    h1 {
+        font-family: 'MathJax_Caligraphic';
+    }
+
+    div {
+      font-family: 'MathJax_Main_Regular';
+      height: 100px;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+      font-family: sans-serif;
+    }
+    .MathJax {
+        font-family: 'MathJax_Math_Regular';
+    }
+    mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    }
+    mjx-container[jax="CHTML"] {
+    line-height: 0;
+    }
   </style>
   <link rel="stylesheet" href="./output/chtml/fonts/woff-v2/stylesheet.css">
-  <link rel="stylesheet" href="./output/chtml/fonts/woff/stylesheet.css">
-  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <header id="main-header_1" class="main-header">
-    1
-  </header>
-  <div class="main-container">
-    <aside>
-      <div>
-        <div>
-          <h3>Первый раздел</h3>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h3>Второй раздел</h3>
-          <ul>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h3>Третий раздел</h3>
-          <ul>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-          </ul>
-        </div>
-      </div>
-    </aside>
-    <div class="wrapper">
-      <p class="mathJax_math">When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-        \(\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\(\(</p>
-        <p>
-          Бесконечная сумма
-          <math display="block">
-            <mrow>
-              <munderover>
-                <mo>∑</mo>
-                <mrow>
-                  <mi>n</mi>
-                  <mo>=</mo>
-                  <mn>1</mn>
-                </mrow>
-                <mrow>
-                  <mo>+</mo>
-                  <mn>∞</mn>
-                </mrow>
-              </munderover>
-              <mfrac>
-                <mn>1</mn>
-                <msup>
-                  <mi>n</mi>
-                  <mn>2</mn>
-                </msup>
-              </mfrac>
-            </mrow>
-          </math>
-          равна действительному числу
-          <math display="inline">
-            <mfrac>
-              <msup>
-                <mi>π</mi>
-                <mn>2</mn>
-              </msup>
-              <mn>6</mn>
-            </mfrac></math
-          >.
-        </p>
-        <p>
-          <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="\mathbf{F}_{2}=k\frac{q_{1}q_{2}\hat{\mathbf{r}}_{21}}{r_{21}^{2}}" display="block">
-              <mrow>
-                <msub>
-                  <mi>𝐅</mi>
-                  <mn>2</mn>
-                </msub>
-                <mo>=</mo>
-                <mrow>
-                  <mi>k</mi>
-                  <mo>⁢</mo>
-                  <mfrac>
-                    <mrow>
-                      <msub>
-                        <mi>q</mi>
-                        <mn>1</mn>
-                      </msub>
-                      <mo>⁢</mo>
-                      <msub>
-                        <mi>q</mi>
-                        <mn>2</mn>
-                      </msub>
-                      <mo>⁢</mo>
-                      <msub>
-                        <mover accent="true">
-                          <mi>𝐫</mi>
-                          <mo stretchy="false">^</mo>
-                        </mover>
-                        <mn>21</mn>
-                      </msub>
-                    </mrow>
-                    <msubsup>
-                      <mi>r</mi>
-                      <mn>21</mn>
-                      <mn>2</mn>
-                    </msubsup>
-                  </mfrac>
-                </mrow>
-              </mrow>
-            </math>
-        </p>
 
-        <p>
-          Это криволинейный интеграл по замкнутому контуру.
-        </p>
-        <p>$$\def\d{\mathrm{d}}\oint_C \vec{B}\circ \d\vec{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{\d}{\d t} \int_S {\vec{E} \circ \hat{n}}\; \d a \right)$$</p>
-        <p>
-          dgdgdgdg <br>
-          \(a^2 + b^2 = c^2\)
-          <br><br>
-          \(v(t) = v_0 + \frac{1}{2}at^2\)
-          <br><br>
-          \(\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}\)  
-          <br><br>
-          \(\exists x \forall y (Rxy \equiv Ryx)\)
-          <br><br>
-          \(p \wedge q \models p\)
-          <br><br>
-          \(\Box\diamond p\equiv\diamond p\)
-          <br><br>
-          \(\int_{0}^{1} x dx = \left[ \frac{1}{2}x^2 \right]_{0}^{1} = \frac{1}{2}\)
-          <br><br>
-          \(e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n\)
-        </p>
-    </div>
+<body>
+  <div class="mathJax_math">
+    <p>    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+      \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]</p>
+    <p>
+      dgdgdgdg <br>
+      \[a^2 + b^2 = c^2\]
+      <br><br>
+      $$v(t) = v_0 + \frac{1}{2}at^2$$
+      <br><br>
+      $$\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$$  
+      <br><br>
+      $$\exists x \forall y (Rxy \equiv Ryx)$$
+      <br><br>
+      $$p \wedge q \models p$$
+      <br><br>
+      $$\Box\diamond p\equiv\diamond p$$
+      <br><br>
+      $$\int_{0}^{1} x dx = \left[ \frac{1}{2}x^2 \right]_{0}^{1} = \frac{1}{2}$$
+      <br><br>
+      $$e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n$$
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
   </div>
-  <footer id="main-footer_1" class="main-footer">
-    2
-  </footer>
+
 </body>
 </html>
 
